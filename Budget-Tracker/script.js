@@ -11,6 +11,10 @@ budgetForm.addEventListener('click', (e)=>{
 })
 
 function AddBtn() {
+    if (inputAmount.value === "") {
+    alert("Please! enter enough amount");
+    return;
+  }
     let inputAmt = Number(inputAmount.value);
     let selectType = inputType.value;
     let selectDes = inputDescription.value;
@@ -24,7 +28,7 @@ function AddBtn() {
     inputAmount.value = "";
     inputDescription.value = "";
 
-    totalBudget.innerText = `Total Budget: $${String(totalAmt)}`
+    totalBudget.innerText = `Total Budget: $${Math.trunc(totalAmt)}`
 }
 
 

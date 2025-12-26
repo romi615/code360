@@ -12,7 +12,6 @@ h1 {
 }
 .container {
   margin: 0 auto;
-  background-color: yellowgreen;
   max-width: 850px;
   height: 200px;
   display: flex;
@@ -45,6 +44,7 @@ form > button {
 }
 
 #budget-display {
+  background-color: yellowgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,12 +60,10 @@ form > button {
 
 @media screen and (max-width: 500px) {
   .container {
-    height: auto;
+    height: 400px;
   }
   .container form {
     flex-direction: column;
     row-gap: 10px;
   }
 }
-
-
